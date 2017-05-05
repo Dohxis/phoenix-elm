@@ -1,6 +1,6 @@
 module Update exposing (..)
 
-import Routing exposing (parseLocation)
+import Routing exposing (..)
 import Action exposing (..)
 import Model exposing (Model)
 import Utils.Router exposing (redirectTo)
@@ -17,4 +17,4 @@ update action model =
                 ( { model | route = newRoute }, Cmd.none )
 
         RedirectTo route ->
-            ( model, (redirectTo route) )
+            ( model, redirectTo route )

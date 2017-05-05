@@ -1,6 +1,7 @@
 module Pages.Homepage.Index exposing (..)
 
 import Html exposing (..)
+import Html.Attributes exposing (..)
 import Html.Events exposing (onClick)
 import Model exposing (..)
 import Action exposing (..)
@@ -11,5 +12,5 @@ view model =
     div []
         [ text "Homepage"
         , br [] []
-        , button [ onClick (RedirectTo DashboardRoute) ] [ text "Go to Dashboard" ]
+        , button [ class "btn tbn-default", onClick (RedirectTo DashboardRoute) ] [ text "Go to Dashboard" ]
         ]

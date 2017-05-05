@@ -51,8 +51,11 @@ exports.config = {
     elmBrunch: {
       elmFolder: "elm",
       mainModules: ["src/Main.elm"],
-      makeParameters: ["--debug"],
+      makeParameters: ["--debug", "--warn"],
       outputFolder: "../vendor"
+    },
+    sass: {
+      mode: "ruby"
     },
     babel: {
       // Do not use ES6 compiler in vendor code

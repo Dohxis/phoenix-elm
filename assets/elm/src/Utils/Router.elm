@@ -1,7 +1,7 @@
 module Utils.Router exposing (..)
 
 import Model exposing (..)
-import Navigation
+import Navigation exposing (..)
 
 
 stringToPath : Route -> String
