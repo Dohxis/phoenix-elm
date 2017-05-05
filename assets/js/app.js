@@ -1,5 +1,6 @@
-import 'phoenix_html'
-import '../css/app.css'
-import Elm from '../elm/Main.elm';
+import "phoenix_html"
 
-Elm.Main.fullscreen();
+const elmDiv = document.getElementById('root');
+if (elmDiv) {
+    Elm.Main.embed(elmDiv);
+}
