@@ -1,4 +1,4 @@
-# Test
+# Elm (0.10.0) + Phoenix (1.3) + Webpack (2)
 
 To start your Phoenix server:
 
